@@ -1,0 +1,2 @@
+- Menampilkan daftar hari libur di tahun yang diberikan.
+- Daftar hari libur diambil dari API: 'https://api-harilibur.vercel.app/' dan ditampilkan menggunakan Vanilla JavaScript.

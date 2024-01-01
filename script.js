@@ -30,7 +30,8 @@ function getData(url, success) {
 
 function success(result) {
     let hari_libur_data = JSON.parse(result), date, content_item, first_bold_content, content_text, second_bold_content
-    hari_libur_data.reverse().forEach(hari_libur => {
+    if (hari_libur_data[0].holiday_date.slice(5).startsWith('12')) hari_libur_data.reverse()
+    hari_libur_data.forEach(hari_libur => {
         date = new Date(hari_libur.holiday_date)
         content_item = document.createElement('li')
 
